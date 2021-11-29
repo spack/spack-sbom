@@ -1,0 +1,801 @@
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.3",
+    "serialNumber": "urn:uuid:dde9aee2-77bd-48b3-8df8-f14cef6055a6",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2021-11-28T18:57:52Z",
+        "tools": [
+            {
+                "vendor": "Lawrence Livermore National Lab",
+                "name": "Spack",
+                "version": "0.16.0-3994-d9ea572a4b"
+            }
+        ],
+        "authors": [
+            {
+                "name": "@vsoch",
+                "email": "vsoch@users.noreply.github.com"
+            }
+        ],
+        "component": {
+            "type": "application",
+            "scope": "required",
+            "name": "python",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "3.8.12",
+            "bom-ref": "python@3.8.12%gcc@9.3.0+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87,4c2457325f2b608b1b6a2c63087df8c26e07db3e3d493caf36a56f0ecf6fb768,f2fd060afc4b4618fe8104c4c5d771f36dc55b1db5a4623785a4ea707ec72fb4 arch=linux-ubuntu20.04-skylake ^berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^expat@2.4.1%gcc@9.3.0+libbsd arch=linux-ubuntu20.04-skylake ^gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^gettext@0.21%gcc@9.3.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu20.04-skylake ^libbsd@0.11.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libffi@3.3%gcc@9.3.0 patches=26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libxml2@2.9.12%gcc@9.3.0~python arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^openssl@1.1.1l%gcc@9.3.0~docs certs=system arch=linux-ubuntu20.04-skylake ^perl@5.34.0%gcc@9.3.0+cpanm+shared+threads arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^sqlite@3.36.0%gcc@9.3.0+column_metadata+fts~functions~rtree arch=linux-ubuntu20.04-skylake ^tar@1.34%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^util-linux-uuid@2.36.2%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+            "description": "The Python programming language.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "316aa33f3b7707d041e73f246efedb297a70898c4b91f127f66dc8d80c596f1a"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tgz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "6fqhxymbemmsau6paczlt2cjor7h665d",
+                "spack:dag_hash": "3q4nqw6ayex6gnm4vjuw43xv63zjzijx",
+                "spack:spec": "python@3.8.12%gcc@9.3.0+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87,4c2457325f2b608b1b6a2c63087df8c26e07db3e3d493caf36a56f0ecf6fb768,f2fd060afc4b4618fe8104c4c5d771f36dc55b1db5a4623785a4ea707ec72fb4 arch=linux-ubuntu20.04-skylake ^berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^expat@2.4.1%gcc@9.3.0+libbsd arch=linux-ubuntu20.04-skylake ^gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^gettext@0.21%gcc@9.3.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu20.04-skylake ^libbsd@0.11.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libffi@3.3%gcc@9.3.0 patches=26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libxml2@2.9.12%gcc@9.3.0~python arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^openssl@1.1.1l%gcc@9.3.0~docs certs=system arch=linux-ubuntu20.04-skylake ^perl@5.34.0%gcc@9.3.0+cpanm+shared+threads arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^sqlite@3.36.0%gcc@9.3.0+column_metadata+fts~functions~rtree arch=linux-ubuntu20.04-skylake ^tar@1.34%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^util-linux-uuid@2.36.2%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "python@3.8.12%gcc@9.3.0+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87,4c2457325f2b608b1b6a2c63087df8c26e07db3e3d493caf36a56f0ecf6fb768,f2fd060afc4b4618fe8104c4c5d771f36dc55b1db5a4623785a4ea707ec72fb4 arch=linux-ubuntu20.04-skylake ^berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^expat@2.4.1%gcc@9.3.0+libbsd arch=linux-ubuntu20.04-skylake ^gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^gettext@0.21%gcc@9.3.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu20.04-skylake ^libbsd@0.11.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libffi@3.3%gcc@9.3.0 patches=26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libxml2@2.9.12%gcc@9.3.0~python arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^openssl@1.1.1l%gcc@9.3.0~docs certs=system arch=linux-ubuntu20.04-skylake ^perl@5.34.0%gcc@9.3.0+cpanm+shared+threads arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^sqlite@3.36.0%gcc@9.3.0+column_metadata+fts~functions~rtree arch=linux-ubuntu20.04-skylake ^tar@1.34%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^util-linux-uuid@2.36.2%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87,4c2457325f2b608b1b6a2c63087df8c26e07db3e3d493caf36a56f0ecf6fb768,f2fd060afc4b4618fe8104c4c5d771f36dc55b1db5a4623785a4ea707ec72fb4",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "licenses": [
+            {
+                "license": {
+                    "name": "MIT"
+                }
+            },
+            {
+                "license": {
+                    "name": "Apache-2.0"
+                }
+            }
+        ]
+    },
+    "components": {
+        "bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake": {
+            "type": "application",
+            "scope": "required",
+            "name": "bzip2",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "1.0.8",
+            "bom-ref": "bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+            "description": "bzip2 is a freely available, patent free high-quality data compressor.\nIt typically compresses files to within 10% to 15% of the best available\ntechniques (the PPM family of statistical compressors), whilst being\naround twice as fast at compression and six times faster at\ndecompression.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "sgzboek7irz5ksv2xxleawhpll7lqp6g",
+                "spack:dag_hash": "doeyikigv6jk4dk6fdxm3cl5j7j465if",
+                "spack:spec": "bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "~debug~pic+shared",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "expat@2.4.1%gcc@9.3.0+libbsd arch=linux-ubuntu20.04-skylake ^libbsd@0.11.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake": {
+            "type": "application",
+            "scope": "required",
+            "name": "expat",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "2.4.1",
+            "bom-ref": "expat@2.4.1%gcc@9.3.0+libbsd arch=linux-ubuntu20.04-skylake ^libbsd@0.11.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+            "description": "Expat is an XML parser library written in C.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "2f9b6a580b94577b150a7d5617ad4643a4301a6616ff459307df3e225bcfbf40"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://github.com/libexpat/libexpat/releases/download/R_2_2_9/expat-2.2.9.tar.bz2"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "je525s5eypoa6rnpkpeum66gykxs5hxm",
+                "spack:dag_hash": "vmemgcdp53jaqj2poscexsg6hlmwxpbp",
+                "spack:spec": "expat@2.4.1%gcc@9.3.0+libbsd arch=linux-ubuntu20.04-skylake ^libbsd@0.11.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "expat@2.4.1%gcc@9.3.0+libbsd arch=linux-ubuntu20.04-skylake ^libbsd@0.11.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "+libbsd",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake": {
+            "type": "application",
+            "scope": "required",
+            "name": "gdbm",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "1.19",
+            "bom-ref": "gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+            "description": "GNU dbm (or GDBM, for short) is a library of database functions that use\nextensible hashing and work similar to the standard UNIX dbm. These\nroutines are provided to a programmer needing to create and manipulate a\nhashed database.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "37ed12214122b972e18a0d94995039e57748191939ef74115b1d41d8811364bc"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://ftpmirror.gnu.org/gdbm/gdbm-1.13.tar.gz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "l5opbe6cvv7ajns6yz37svmgo2m4sghc",
+                "spack:dag_hash": "wuhyaf477mw6nmgftp3gvrxic7qzgpso",
+                "spack:spec": "gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "gettext@0.21%gcc@9.3.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^libxml2@2.9.12%gcc@9.3.0~python arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^tar@1.34%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake": {
+            "type": "application",
+            "scope": "required",
+            "name": "gettext",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "0.21",
+            "bom-ref": "gettext@0.21%gcc@9.3.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^libxml2@2.9.12%gcc@9.3.0~python arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^tar@1.34%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+            "description": "GNU internationalization (i18n) and localization (l10n) library.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://ftpmirror.gnu.org/gettext/gettext-0.20.1.tar.xz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "zxhkdka3tqcuvl6vnkzi55bmdjma2tua",
+                "spack:dag_hash": "pwna5h4ub2juzatze36sctanfgcwy44l",
+                "spack:spec": "gettext@0.21%gcc@9.3.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^libxml2@2.9.12%gcc@9.3.0~python arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^tar@1.34%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "gettext@0.21%gcc@9.3.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^libxml2@2.9.12%gcc@9.3.0~python arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^tar@1.34%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "+bzip2+curses+git~libunistring+libxml2+tar+xz",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "libffi@3.3%gcc@9.3.0 patches=26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0 arch=linux-ubuntu20.04-skylake": {
+            "type": "lib",
+            "scope": "required",
+            "name": "libffi",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "3.3",
+            "bom-ref": "libffi@3.3%gcc@9.3.0 patches=26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0 arch=linux-ubuntu20.04-skylake",
+            "description": "The libffi library provides a portable, high level programming interface\nto various calling conventions. This allows a programmer to call any\nfunction specified by a call interface description at run time.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "72fba7922703ddfa7a028d513ac15a85c8d54c8d67f55fa5a4802885dc652056"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "k6kmrnkoic3atpszdgcfskf45oioytdx",
+                "spack:dag_hash": "k6kmrnkoic3atpszdgcfskf45oioytdx",
+                "spack:spec": "libffi@3.3%gcc@9.3.0 patches=26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0 arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "libffi@3.3%gcc@9.3.0 patches=26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0 arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": " patches=26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake": {
+            "type": "application",
+            "scope": "required",
+            "name": "ncurses",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "6.2",
+            "bom-ref": "ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+            "description": "The ncurses (new curses) library is a free software emulation of curses\nin System V Release 4.0, and more. It uses terminfo format, supports\npads and color and multiple highlights and forms characters and\nfunction-key mapping, and has all the other SYSV-curses enhancements\nover BSD curses.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "30306e0c76e0f9f1f0de987cf1c82a5c21e1ce6568b9227f7da5b71cbea86c9d"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://ftpmirror.gnu.org/ncurses/ncurses-6.1.tar.gz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "2lphm4mbq4uynycwkbvzdxzwbejfjrpj",
+                "spack:dag_hash": "5bzr63iqgpogufanleaw2fzjxnzziz67",
+                "spack:spec": "ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "~symlinks+termlib abi=none",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "openssl@1.1.1l%gcc@9.3.0~docs certs=system arch=linux-ubuntu20.04-skylake ^berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^perl@5.34.0%gcc@9.3.0+cpanm+shared+threads arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake": {
+            "type": "application",
+            "scope": "required",
+            "name": "openssl",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "1.1.1l",
+            "bom-ref": "openssl@1.1.1l%gcc@9.3.0~docs certs=system arch=linux-ubuntu20.04-skylake ^berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^perl@5.34.0%gcc@9.3.0+cpanm+shared+threads arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+            "description": "OpenSSL is an open source project that provides a robust, commercial-\ngrade, and full-featured toolkit for the Transport Layer Security (TLS)\nand Secure Sockets Layer (SSL) protocols. It is also a general-purpose\ncryptography library.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "0b7a3e5e59c34827fe0c3a74b7ec8baef302b98fa80088d7f9153aa16fa76bd1"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://www.openssl.org/source/openssl-1.1.1d.tar.gz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "y5jlawuiybgyoyrxvpdo52ufwwqplpkw",
+                "spack:dag_hash": "antishvjbtniecep64dku2cenh7hkonc",
+                "spack:spec": "openssl@1.1.1l%gcc@9.3.0~docs certs=system arch=linux-ubuntu20.04-skylake ^berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^perl@5.34.0%gcc@9.3.0+cpanm+shared+threads arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "openssl@1.1.1l%gcc@9.3.0~docs certs=system arch=linux-ubuntu20.04-skylake ^berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^perl@5.34.0%gcc@9.3.0+cpanm+shared+threads arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "~docs certs=system",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake": {
+            "type": "application",
+            "scope": "required",
+            "name": "pkgconf",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "1.8.0",
+            "bom-ref": "pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+            "description": "pkgconf is a program which helps to configure compiler and linker flags\nfor development frameworks. It is similar to pkg-config from\nfreedesktop.org, providing additional functionality while also\nmaintaining compatibility.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "ef9c7e61822b7cb8356e6e9e1dca58d9556f3200d78acab35e4347e9d4c2bbaf"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://distfiles.dereferenced.org/pkgconf/pkgconf-1.6.3.tar.xz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "5bckkoeicca3dtolbeyz6tnnyxwcsfn5",
+                "spack:dag_hash": "5bckkoeicca3dtolbeyz6tnnyxwcsfn5",
+                "spack:spec": "pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake": {
+            "type": "application",
+            "scope": "required",
+            "name": "readline",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "8.1",
+            "bom-ref": "readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+            "description": "The GNU Readline library provides a set of functions for use by\napplications that allow users to edit command lines as they are typed\nin. Both Emacs and vi editing modes are available. The Readline library\nincludes additional functions to maintain a list of previously-entered\ncommand lines, to recall and perhaps reedit those lines, and perform\ncsh-like history expansion on previous commands.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "f8ceb4ee131e3232226a17f51b164afc46cd0b9e6cef344be87c65962cb82b02"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://ftpmirror.gnu.org/readline/readline-8.0.tar.gz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "y2qtng7fushalglpskcsqjmg6v2ocaww",
+                "spack:dag_hash": "wkga37hicua476jm2bjjmuzufz6h574j",
+                "spack:spec": "readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "sqlite@3.36.0%gcc@9.3.0+column_metadata+fts~functions~rtree arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake": {
+            "type": "application",
+            "scope": "required",
+            "name": "sqlite",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "3.36.0",
+            "bom-ref": "sqlite@3.36.0%gcc@9.3.0+column_metadata+fts~functions~rtree arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+            "description": "SQLite3 is an SQL database engine in a C library. Programs that link the\nSQLite3 library can have SQL database access without running a separate\nRDBMS process.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "bd90c3eb96bee996206b83be7065c9ce19aef38c3f4fb53073ada0d0b69bbce3"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "an5stbgzfjss2gdl657zw4yfxsbntd3r",
+                "spack:dag_hash": "giiehyuiwjzsnylt7ovnrfmvnlsmwoby",
+                "spack:spec": "sqlite@3.36.0%gcc@9.3.0+column_metadata+fts~functions~rtree arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "sqlite@3.36.0%gcc@9.3.0+column_metadata+fts~functions~rtree arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "+column_metadata+fts~functions~rtree",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "util-linux-uuid@2.36.2%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake": {
+            "type": "application",
+            "scope": "required",
+            "name": "util-linux-uuid",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "2.36.2",
+            "bom-ref": "util-linux-uuid@2.36.2%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+            "description": "Util-linux is a suite of essential utilities for any Linux system.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "f5dbe79057e7d68e1a46fc04083fc558b26a49499b1b3f50e4f4893150970463"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://www.kernel.org/pub/linux/utils/util-linux/v2.29/util-linux-2.29.2.tar.gz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "hqih4sizu2o5rjuyvovebhhdudjkffxg",
+                "spack:dag_hash": "yi7nyorl6b5sylmrtv2n336lg46ovs4g",
+                "spack:spec": "util-linux-uuid@2.36.2%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "util-linux-uuid@2.36.2%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake": {
+            "type": "application",
+            "scope": "required",
+            "name": "xz",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "5.2.5",
+            "bom-ref": "xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake",
+            "description": "XZ Utils is free general-purpose data compression software with high\ncompression ratio. XZ Utils were written for POSIX-like systems, but\nalso work on some not-so-POSIX systems. XZ Utils are the successor to\nLZMA Utils.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "5117f930900b341493827d63aa910ff5e011e0b994197c3b71c08a20228a42df"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://prdownloads.sourceforge.net/lzmautils/files/xz-5.2.5.tar.bz2"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "rysepqc4kpacrxufhrb7tm2dk6sups6v",
+                "spack:dag_hash": "rysepqc4kpacrxufhrb7tm2dk6sups6v",
+                "spack:spec": "xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "~pic libs=shared,static",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake": {
+            "type": "lib",
+            "scope": "required",
+            "name": "zlib",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "1.2.11",
+            "bom-ref": "zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+            "description": "A free, general-purpose, legally unencumbered lossless data-compression\nlibrary.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://zlib.net/fossils/zlib-1.2.11.tar.gz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "3kmnsdv36qxm3slmcyrb326gkghsp6px",
+                "spack:dag_hash": "3kmnsdv36qxm3slmcyrb326gkghsp6px",
+                "spack:spec": "zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "+optimize+pic+shared",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake": {
+            "type": "application",
+            "scope": "required",
+            "name": "diffutils",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "3.8",
+            "bom-ref": "diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+            "description": "GNU Diffutils is a package of several programs related to finding\ndifferences between files.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "a6bdd7d1b31266d11c4f4de6c1b748d4607ab0231af5188fc2533d0ae2438fec"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://ftpmirror.gnu.org/diffutils/diffutils-3.7.tar.xz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "vhwuajizcnpfo2jkjqbo76z4dxjbiyzi",
+                "spack:dag_hash": "ae4ve7adrxntd2kafm4xxmeyhrwpzpmg",
+                "spack:spec": "diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "libbsd@0.11.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake": {
+            "type": "lib",
+            "scope": "required",
+            "name": "libbsd",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "0.11.3",
+            "bom-ref": "libbsd@0.11.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+            "description": "This library provides useful functions commonly found on BSD systems,\nand lacking on others like GNU systems, thus making it easier to port\nprojects with strong BSD origins, without needing to embed the same code\nover and over again on each project.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "ff95cf8184151dacae4247832f8d4ea8800fa127dbd15033ecfe839f285b42a1"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://libbsd.freedesktop.org/releases/libbsd-0.9.1.tar.xz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "kph7r6gy4ueif7pu5mbmli2vfitmuacp",
+                "spack:dag_hash": "sq6wxdy2npljxpwjnbnn4or72idcwnxm",
+                "spack:spec": "libbsd@0.11.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "libbsd@0.11.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake": {
+            "type": "lib",
+            "scope": "required",
+            "name": "libiconv",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "1.16",
+            "bom-ref": "libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+            "description": "GNU libiconv provides an implementation of the iconv() function and the\niconv program for character set conversion.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "e6a1b1b589654277ee790cce3734f07876ac4ccfaecbee8afa0b649cf529cc04"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://ftpmirror.gnu.org/libiconv/libiconv-1.16.tar.gz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "infpf4xwcb7253odbry6ljjcsat2ksp5",
+                "spack:dag_hash": "infpf4xwcb7253odbry6ljjcsat2ksp5",
+                "spack:spec": "libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": " libs=shared,static",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "libxml2@2.9.12%gcc@9.3.0~python arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake": {
+            "type": "lib",
+            "scope": "required",
+            "name": "libxml2",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "2.9.12",
+            "bom-ref": "libxml2@2.9.12%gcc@9.3.0~python arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+            "description": "Libxml2 is the XML C parser and toolkit developed for the Gnome project\n(but usable outside of the Gnome platform), it is free software\navailable under the MIT License.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "c8d6681e38c56f172892c85ddc0852e1fd4b53b4209e7f4ebf17f7e2eae71d92"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "http://xmlsoft.org/sources/libxml2-2.9.8.tar.gz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "nocnlnpzczmiw7huejxcihf5nyd53nou",
+                "spack:dag_hash": "754qa5s5kzuy3ouxthkzwuxepsornltc",
+                "spack:spec": "libxml2@2.9.12%gcc@9.3.0~python arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "libxml2@2.9.12%gcc@9.3.0~python arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "~python",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "tar@1.34%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake": {
+            "type": "application",
+            "scope": "required",
+            "name": "tar",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "1.34",
+            "bom-ref": "tar@1.34%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+            "description": "GNU Tar provides the ability to create tar archives, as well as various\nother kinds of manipulation.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "03d908cf5768cfe6b7ad588c921c6ed21acabfb2b79b788d1330453507647aed"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://ftpmirror.gnu.org/tar/tar-1.32.tar.gz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "rnappcbarqhjofjdjobdlbmpmg5t6tch",
+                "spack:dag_hash": "fx7hfy2etp4pws5mpudqurfdyj2qhnza",
+                "spack:spec": "tar@1.34%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "tar@1.34%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "perl@5.34.0%gcc@9.3.0+cpanm+shared+threads arch=linux-ubuntu20.04-skylake ^berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake": {
+            "type": "application",
+            "scope": "required",
+            "name": "perl",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "5.34.0",
+            "bom-ref": "perl@5.34.0%gcc@9.3.0+cpanm+shared+threads arch=linux-ubuntu20.04-skylake ^berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+            "description": "Perl 5 is a highly capable, feature-rich programming language with over\n27 years of development.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "551efc818b968b05216024fb0b727ef2ad4c100f8cb6b43fab615fa78ae5be9a"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "http://www.cpan.org/src/5.0/perl-5.34.0.tar.gz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "zsgyqtaxar4epxbni37pdi3kpk3h5ocn",
+                "spack:dag_hash": "bvgnm2ejnajpvaruta22d5c24g6qi4zu",
+                "spack:spec": "perl@5.34.0%gcc@9.3.0+cpanm+shared+threads arch=linux-ubuntu20.04-skylake ^berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "perl@5.34.0%gcc@9.3.0+cpanm+shared+threads arch=linux-ubuntu20.04-skylake ^berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "+cpanm+shared+threads",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake": {
+            "type": "lib",
+            "scope": "required",
+            "name": "libmd",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "1.0.3",
+            "bom-ref": "libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+            "description": "This library provides message digest functions found on BSD systems\neither on their libc (NetBSD, OpenBSD) or libmd (FreeBSD, DragonflyBSD,\nmacOS, Solaris) libraries and lacking on others like GNU systems.\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "5a02097f95cc250a3f1001865e4dbba5f1d15554120f95693c0541923c52af4a"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://archive.hadrons.org/software/libmd/libmd-1.0.3.tar.xz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "ewbtioeqak2kfwmcuaf3iif3cg3a7glg",
+                "spack:dag_hash": "ewbtioeqak2kfwmcuaf3iif3cg3a7glg",
+                "spack:spec": "libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        },
+        "berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake": {
+            "type": "application",
+            "scope": "required",
+            "name": "berkeley-db",
+            "mime-type": "application/vnd.spack.package",
+            "group": "spack.io",
+            "version": "18.1.40",
+            "bom-ref": "berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake",
+            "description": "Oracle Berkeley DB\n",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "cotent": "0cecb2ef0c67b166de93732769abdeba0555086d51de1090df325e18ee8da9c8"
+                }
+            ],
+            "externalReferences": [
+                {
+                    "type": "website",
+                    "url": "https://download.oracle.com/berkeley-db/db-18.1.40.tar.gz"
+                }
+            ],
+            "properties": {
+                "spack:build_hash": "pdlzkb4o4qsw3nglppv7eqjm7lepqvod",
+                "spack:dag_hash": "pdlzkb4o4qsw3nglppv7eqjm7lepqvod",
+                "spack:spec": "berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake",
+                "spack:build_spec": "berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake",
+                "spack:architecture": "linux-ubuntu20.04-skylake",
+                "spack:variants": "+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522",
+                "spack:compiler": "gcc@9.3.0"
+            }
+        }
+    },
+    "dependencies": [
+        {
+            "ref": "bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+            "dependsOn": [
+                "diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake"
+            ]
+        },
+        {
+            "ref": "expat@2.4.1%gcc@9.3.0+libbsd arch=linux-ubuntu20.04-skylake ^libbsd@0.11.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+            "dependsOn": [
+                "libbsd@0.11.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libmd@1.0.3%gcc@9.3.0 arch=linux-ubuntu20.04-skylake"
+            ]
+        },
+        {
+            "ref": "gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+            "dependsOn": [
+                "readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake"
+            ]
+        },
+        {
+            "ref": "gettext@0.21%gcc@9.3.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^libxml2@2.9.12%gcc@9.3.0~python arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^tar@1.34%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+            "dependsOn": [
+                "bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+                "libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+                "libxml2@2.9.12%gcc@9.3.0~python arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "tar@1.34%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake",
+                "xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake"
+            ]
+        },
+        {
+            "ref": "libffi@3.3%gcc@9.3.0 patches=26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0 arch=linux-ubuntu20.04-skylake",
+            "dependsOn": []
+        },
+        {
+            "ref": "ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+            "dependsOn": [
+                "pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake"
+            ]
+        },
+        {
+            "ref": "openssl@1.1.1l%gcc@9.3.0~docs certs=system arch=linux-ubuntu20.04-skylake ^berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^perl@5.34.0%gcc@9.3.0+cpanm+shared+threads arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+            "dependsOn": [
+                "perl@5.34.0%gcc@9.3.0+cpanm+shared+threads arch=linux-ubuntu20.04-skylake ^berkeley-db@18.1.40%gcc@9.3.0+cxx~docs+stl patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu20.04-skylake ^bzip2@1.0.8%gcc@9.3.0~debug~pic+shared arch=linux-ubuntu20.04-skylake ^diffutils@3.8%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^gdbm@1.19%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^libiconv@1.16%gcc@9.3.0 libs=shared,static arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+                "zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake"
+            ]
+        },
+        {
+            "ref": "pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+            "dependsOn": []
+        },
+        {
+            "ref": "readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+            "dependsOn": [
+                "ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake"
+            ]
+        },
+        {
+            "ref": "sqlite@3.36.0%gcc@9.3.0+column_metadata+fts~functions~rtree arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+            "dependsOn": [
+                "readline@8.1%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^ncurses@6.2%gcc@9.3.0~symlinks+termlib abi=none arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+                "zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake"
+            ]
+        },
+        {
+            "ref": "util-linux-uuid@2.36.2%gcc@9.3.0 arch=linux-ubuntu20.04-skylake ^pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake",
+            "dependsOn": [
+                "pkgconf@1.8.0%gcc@9.3.0 arch=linux-ubuntu20.04-skylake"
+            ]
+        },
+        {
+            "ref": "xz@5.2.5%gcc@9.3.0~pic libs=shared,static arch=linux-ubuntu20.04-skylake",
+            "dependsOn": []
+        },
+        {
+            "ref": "zlib@1.2.11%gcc@9.3.0+optimize+pic+shared arch=linux-ubuntu20.04-skylake",
+            "dependsOn": []
+        }
+    ],
+    "externalReferences": [
+        {
+            "type": "website",
+            "url": "https://github.com/spack/spack"
+        },
+        {
+            "type": "website",
+            "url": "https://spack.github.io/packages"
+        }
+    ]
+}
