@@ -123,7 +123,7 @@ def get_component(spec):
 
         # Covers both sha256 and sha256sum
         if key.startswith("sha256"):
-            component["hashes"].append({"alg": "SHA-256", "cotent": hashvalue})
+            component["hashes"].append({"alg": "SHA-256", "content": hashvalue})
 
     # External references?
     if spec.package.all_urls:
